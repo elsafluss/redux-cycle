@@ -10,7 +10,7 @@ font-family: 'Ubuntu Mono', monospace;
 
 h1 {
     margin: 0;
-    padding-bottom: 1em;
+    padding: 1em;
 }
 
 .cycle-page {
@@ -22,18 +22,21 @@ h1 {
     font-size: large;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
 .cycle-container {
     height: 65%;
-    width: 80%;
-    margin: auto;
+    width: auto;
     display: grid;
     grid-template-columns: repeat(14, 65px);
     grid-template-rows: repeat(12, 50px);
     gap: .5em;
     margin: auto;
-    position: relative;
 }
 
 .box {
