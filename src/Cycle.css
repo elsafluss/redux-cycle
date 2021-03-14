@@ -1,0 +1,200 @@
+/* 
+--chinese-violet: #78586f;
+--gold-crayola: #e6c79c;
+--yellow-green-crayola: #cddfa0;
+--emerald: #6fd08c;
+--pewter-blue: #7b9ea8;
+--rich-black-fogra-29: #011627;
+font-family: 'Ubuntu Mono', monospace;
+ */
+
+h1 {
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.cycle-page {
+    background-color: #011627;
+    height: 100vh;
+    width: 100vw;
+    color: #cddfa0;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+}
+
+.cycle-container {
+    height: 65%;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(14, 65px);
+    grid-template-rows: repeat(12, 50px);
+    gap: .5em;
+    margin: auto;
+    position: relative;
+}
+
+.box {
+    border-radius: 10px;
+    margin: .4em;
+    padding: .2em;
+    color: #011627;
+}
+
+.box:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    cursor: pointer;
+}
+
+.arrow {
+    color: #cddfa0;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+}
+
+.view {
+    grid-column: 4 / 7;
+    grid-row: 10 / 12;    
+    background-color: #78586f;
+    height: 95%;
+    width: 95%;
+    align-self: center;
+    justify-content: center;
+}
+
+.actions {
+    grid-column: 3 / 6;
+    grid-row: 7 / 9;    
+    background-color: #cddfa0;
+    height: 95%;
+    width: 95%;
+    align-self: center;
+    justify-content: center;
+}
+
+.store {
+    grid-column: 8 / 13;
+    grid-row: 5 / 11;
+    background-color: #cddfa0;
+    height: 95%;
+    width: 95%;
+    justify-content: center;
+}
+
+.store:hover {
+    transform: none;
+}
+
+.reducer {
+    grid-column: 9 / 12;
+    grid-row: 6 / 9;
+    background-color: #6fd08c;
+    height: 95%;
+    width: 95%;
+    align-self: center;
+    justify-content: center;
+}
+
+.state {
+    grid-column: 9 / 12;
+    grid-row: 10 / 12;
+    background-color: #7b9ea8;    
+    height: 95%;
+    width: 95%;
+    align-self: center;
+    justify-content: center;
+}
+
+.dispatcher {
+    grid-column: 9 / 12;
+    grid-row: 1 / 4;
+    background-color: #78586f;
+    height: 95%;
+    width: 95%;
+    align-self: center;
+    justify-content: center;
+}
+
+.middleware {
+    grid-column: 8 / 10;
+    grid-row: 1 / 4;
+    background-color: #e6c79c;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+}
+
+.api {
+    grid-column: 5 / 7;
+    grid-row: 2 / 4;
+    background-color: #7b9ea8;
+}
+
+.view-action-arrow-two {
+    grid-column: 4;
+    grid-row: 9;
+}
+
+.action-dispatcher-arrow-one {
+    grid-column: 4;
+    grid-row: 6;
+    align-self: flex-end;
+}
+
+.action-dispatcher-arrow-two {
+    grid-column: 6;
+    grid-row: 1;
+}
+
+.middleware-api-arrow-one {
+    grid-column: 7;
+    grid-row: 3;
+}
+
+.middleware-api-arrow-two {
+    grid-column: 7;
+    grid-row: 2;
+}
+
+.dispatcher-store-arrow {
+    grid-column: 10;
+    grid-row: 4;
+}
+
+.single-reducer-one {
+    grid-column: 9;
+    grid-row: 7;
+    z-index: 2;
+}
+
+.single-reducer-two {
+    grid-column: 10;
+    grid-row: 7;
+    z-index: 2;
+}
+
+.single-reducer-three {
+    grid-column: 9;
+    grid-row: 8;
+    z-index: 2;
+}
+
+.single-reducer-one:hover,
+.single-reducer-two:hover,
+.single-reducer-three:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    cursor: pointer;
+}
+
+.reducer-state-arrow {
+    grid-column: 10;
+    grid-row: 9;
+}
+
+.state-action-arrow {
+    grid-column: 7 / 9;
+    grid-row: 11;
+}
