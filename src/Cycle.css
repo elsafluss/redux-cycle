@@ -5,8 +5,7 @@
 --emerald: #6fd08c;
 --pewter-blue: #7b9ea8;
 --rich-black-fogra-29: #011627;
-font-family: 'Ubuntu Mono', monospace;
- */
+*/
 
 h1 {
     margin: 0;
@@ -36,7 +35,7 @@ h1 {
     grid-template-columns: repeat(14, 65px);
     grid-template-rows: repeat(12, 50px);
     gap: .5em;
-    margin: auto;
+    margin: 1em auto;
 }
 
 .box {

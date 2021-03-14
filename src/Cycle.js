@@ -2,6 +2,7 @@ import React from 'react'
 import Arrow from 'react-arrow'
 import './Cycle.css'
 
+// <Arrow /> settings
 const headWidth = 30
 const headLength = 10
 const strokeWidth = .5
